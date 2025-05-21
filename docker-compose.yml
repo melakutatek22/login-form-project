@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+
+  backend:
+    build: ./backend
+    ports:
+      - "5000:80"
+    environment:
+      - ConnectionStrings__MongoDb=mongodb+srv://Admin:<P@ssw0rd$!>@cluster0.65sgvqx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0

@@ -1,0 +1,33 @@
+name: Docker Login Form MongoDB Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build and Start Services
+        run: |
+          docker-compose up -d --build
+          sleep 10
+
+      - name: Test Backend Login Endpoint
+        run: |
+          sudo apt-get update && sudo apt-get install curl -y
+          curl -X POST http://localhost:5000/api/auth/login \
+            -H "Content-Type: application/json" \
+            -d '{"username":"Admin","password":"P@ssw0rd$!"}' || exit 1
+
+      - name: Clean up
+        run: docker-compose down
