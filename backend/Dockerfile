@@ -7,7 +7,7 @@ RUN dotnet restore
 
 # Copy rest of the source code and publish
 COPY . ./
-RUN dotnet publish -c Release -o out --no-restore
+RUN dotnet publish -c Release -o out
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
