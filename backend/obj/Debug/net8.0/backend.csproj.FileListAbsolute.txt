@@ -1,0 +1,7 @@
+C:\Users\melaku.tatek\Desktop\login-form-project\backend\obj\Debug\net8.0\backend.csproj.AssemblyReference.cache
+C:\Users\melaku.tatek\Desktop\login-form-project\backend\obj\Debug\net8.0\backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\melaku.tatek\Desktop\login-form-project\backend\obj\Debug\net8.0\backend.AssemblyInfoInputs.cache
+C:\Users\melaku.tatek\Desktop\login-form-project\backend\obj\Debug\net8.0\backend.AssemblyInfo.cs
+C:\Users\melaku.tatek\Desktop\login-form-project\backend\obj\Debug\net8.0\backend.csproj.CoreCompileInputs.cache
+C:\Users\melaku.tatek\Desktop\login-form-project\backend\obj\Debug\net8.0\backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\melaku.tatek\Desktop\login-form-project\backend\obj\Debug\net8.0\backend.sourcelink.json
